@@ -15,4 +15,4 @@ spec:
     - destination:
         host: ip-frontend-svc
         port:
-          name: http
+          number: 80
