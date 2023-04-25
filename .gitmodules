@@ -1,3 +1,6 @@
 [submodule "ip-ui"]
 	path = ip-ui
 	url = https://github.com/MoiseevDI/react-one-page.git
+[submodule "ip-back"]
+	path = ip-back
+	url = https://github.com/MoiseevDI/fastapi-simple-app.git
