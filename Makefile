@@ -1,6 +1,6 @@
 apply:
-    kubectl create namespace istio-project-ns --dry-run=client
-    kubectl label namespace istio-project-ns istio-injection=enabled --overwrite
+	kubectl create namespace istio-project-ns --dry-run=client
+	kubectl label namespace istio-project-ns istio-injection=enabled --overwrite
 	kubectl apply -f kube/api-deployment.yaml -n istio-project-ns
 	kubectl apply -f kube/api-service.yaml -n istio-project-ns
 	kubectl apply -f kube/front-deployment.yaml -n istio-project-ns
