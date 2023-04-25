@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip-frontend
+spec:
+  replicas: 2
+  minReadySeconds: 15
+  selector:
+    matchLabels:
+      app: ip-frontend
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: ip-frontend
+    spec:
+      containers:
+        - image: moiseevdi/ip-simple-ui
+          imagePullPolicy: Always
+          name: ip-frontend
+          ports:
+            - containerPort: 80
