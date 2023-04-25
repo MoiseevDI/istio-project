@@ -1,0 +1,3 @@
+[submodule "ip-ui"]
+	path = ip-ui
+	url = https://github.com/MoiseevDI/react-one-page.git
