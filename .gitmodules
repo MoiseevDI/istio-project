@@ -6,3 +6,6 @@
 	path = ip-back
 	url = https://github.com/MoiseevDI/fastapi-simple-app.git
 	branch = main
+[submodule "ip-logic"]
+	path = ip-logic
+	url = https://github.com/MoiseevDI/simple-sa-service.git
