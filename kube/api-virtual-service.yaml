@@ -4,13 +4,11 @@ metadata:
   name: api-vs
 spec:
   hosts:
-  - testapp.mdiservices.ru
-  gateways:
-  - ip-ingress-gateway
+  - api
   http:
   - match:
     - uri:
-        prefix: /api
+        prefix: /
     route:
     - destination:
         host: api

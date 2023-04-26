@@ -6,10 +6,12 @@ apply:
 	kubectl apply -f kube/front-deployment.yaml -n istio-project-ns
 	kubectl apply -f kube/front-service.yaml -n istio-project-ns
 	kubectl apply -f kube/front-virtual-service.yaml -n istio-project-ns
+	kubectl apply -f kube/api-virtual-service.yaml -n istio-project-ns
 	kubectl apply -f kube/service-entry-minerstat.yaml -n istio-project-ns
-	kubectl apply -f kube/ingress.yaml -n istio-project-ns
+	kubectl apply -f kube/gateway.yaml -n istio-project-ns
 	kubectl apply -f kube/egress.yaml -n istio-project-ns
 delete:
+	kubectl delete -f kube/api-virtual-service.yaml -n istio-project-ns
 	kubectl delete -f kube/front-virtual-service.yaml -n istio-project-ns
 	kubectl delete -f kube/service-entry-minerstat.yaml -n istio-project-ns
 	kubectl delete -f kube/ingress.yaml -n istio-project-ns

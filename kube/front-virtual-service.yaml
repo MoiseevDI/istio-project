@@ -4,15 +4,15 @@ metadata:
   name: front-vs
 spec:
   hosts:
-  - testapp.mdiservices.ru
+    - testapp.mdiservices.ru
   gateways:
-  - ip-ingress-gateway
+    - ip-ingress-gateway
   http:
-  - match:
-    - uri:
-        prefix: /
-    route:
-    - destination:
-        host: ip-frontend-svc
-        port:
-          number: 80
+    - match:
+      - uri:
+          prefix: /
+      route:
+      - destination:
+          host: ip-frontend-svc
+          port:
+            number: 80
