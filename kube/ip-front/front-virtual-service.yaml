@@ -10,7 +10,13 @@ spec:
   http:
     - match:
       - uri:
-          exact: /ppprp
+          exact: /
+      - uri:
+          exact: /callback
+      - uri:
+          prefix: /static
+      - uri:
+          regex: '^.*\.(ico|png|jpg)$'
       route:
       - destination:
           host: ip-frontend-svc

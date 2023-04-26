@@ -1,10 +1,10 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: ServiceEntry
 metadata:
-  name: minerstat
+  name: newsdata
 spec:
   hosts:
-  - api.minerstat.com
+  - newsdata.io
   ports:
   - number: 443
     name: tls
