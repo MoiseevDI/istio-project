@@ -4,7 +4,7 @@ metadata:
   name: front-vs
 spec:
   hosts:
-  - "*"
+  - testapp.mdiservices.ru
   gateways:
   - ip-ingress-gateway
   http:
