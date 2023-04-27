@@ -12,6 +12,8 @@ Neutral news is indicated in dark green.
 
 The latest news is pulled up from https://newsdata.io/
 
+![Alt text](istio-flow.png?raw=true "Istio flow")
+
 The application consists of 3 microservices.
 1) ip-ui - frontend react application
 2) ip-back - backend fast api application
