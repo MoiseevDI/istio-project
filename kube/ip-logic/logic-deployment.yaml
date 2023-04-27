@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: logic
 spec:
-  replicas: 2
+  replicas: 1
   minReadySeconds: 15
   selector:
     matchLabels:
